@@ -63,11 +63,14 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+    I attempted to add a new toy in the front-end and watched the backend server console. Saw that it was a name error followed where the error was originating and found a typo "Toys" when it should be "Toy"
 
 - Update the number of likes for a toy
 
   - How I debugged:
+    watched the backend console as I clicked the like button. Saw that its throwing No content as part of the problem for the updated method. Saw that the method was not returning anything. Fixed issue by render json.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+    Attempted to delete item, saw that it was showing there was no routes matching delete in the action controller. Added the destroy method and it worked fine.
